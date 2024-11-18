@@ -1,0 +1,85 @@
+1 - 
+
+# Include <stdio.h>
+
+int main (){
+
+Int pontos [3][5];
+Int i, j , soma, maior_soma = 0, vencedor = 0;
+
+printf("Digite as pontuações dos 3 jogadores em 5 jogos:\n");
+  for (i=0; i<3; i++){
+    for (j=0; j<5; j++{
+	printf("Jogador %d, jogo %d:", i+1, j+1);
+	scanf("%d", &pontos [i][j]);
+  }
+}
+
+  for (i=0; i<3; i++){
+    soma=0;
+	for (j=0; j<5; j++){
+	  soma+= pontos [i][j];
+}
+
+printf("Jogador %d %d pontos \n", i+1, soma);
+
+if(soma > maior_soma){
+  maior_soma = soma;
+  venmcedor = i+1;
+  }
+}
+
+printf("Vencedor: Jogador %d \n", vencedor);
+return 0;
+}
+
+
+
+
+2 -
+
+# Include <stdio.h>
+
+int main (){
+int n, i , j;
+
+printf("Digite o tamanho da matriz quadrada:");
+scanf("%d", &n);
+
+int matriz [n][n];
+
+  for (i=0; i<n; i++){
+    for (j=0; j<n; j++){
+      matriz [i][j] = 0;
+  }
+}
+
+  for (i=0; i<n; i++){
+    for (j=0; j<i; j++){
+      matriz [i][j] = j+1;
+  }
+}
+
+  for (i=0; i<n; i++){
+    matriz [i][j] = i+1;
+}
+
+for (i=0; i<n; i++){
+    for (j=0; j<n; j++){
+      printf ("%d", matriz [i][j]);
+  }
+  printf ("\n");
+}
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+	
